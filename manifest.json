@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Good PDF Hunting",
+    "version": "1.0.0",
+    "description": "Modify the print styles for articles on Good Beer Hunting so they can be saved to PDF.",
+    "content_scripts": [
+        {
+            "css": ["styles.css"],
+            "matches": [
+                "https://goodbeerhunting.com/*",
+                "https://www.goodbeerhunting.com/*"
+            ]
+        }
+    ]
+}
